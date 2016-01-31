@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         num2 = (EditText) findViewById(R.id.number2);
 
         add.setOnClickListener(this); // alt+enter
+        sub.setOnClickListener(this); // alt+enter
+        mul.setOnClickListener(this); // alt+enter
+        div.setOnClickListener(this); // alt+enter
+
         Log.i("cicloVida","Entro en onCreate");
     }
 
@@ -71,12 +75,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onDestroy();
 
     }
+    //endregion
 
     @Override
     public void onClick(View v) {
 
+        String n1 = num1.getText().toString();
+        String n2 = num2.getText().toString();
+
+        int ni1 = Integer.parseInt(n1);
+        int ni2 = Integer.parseInt(n2);
+        int r = 0;
+
+        switch (v.getId()){
+
+          case R.id.add:
+                  r = ni1 + ni2;
+              break;
+          case R.id.sub:
+              r = ni1 - ni2;
+              break;
+          case R.id.mul:
+              r = ni1 * ni2;
+              break;
+          case R.id.div:
+              r = ni1 / ni2;
+              break;
+
+      }
+
+        answer.setText(""+r);
+
     }
-    //endregion
+
 
 
 }

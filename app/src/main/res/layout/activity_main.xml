@@ -12,7 +12,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Number 1"
+        android:hint="@string/hint_1"
         android:textAlignment="center"
         android:inputType="number"
         android:id="@+id/number1"/>
@@ -20,7 +20,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Number 2"
+        android:hint="@string/hint_2"
         android:textAlignment="center"
         android:inputType="number"
         android:id="@+id/number2"/>
@@ -36,36 +36,36 @@
         android:gravity="center_horizontal"
         >
         <Button
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/btn_wh"
+            android:layout_height="@dimen/btn_wh"
             android:textSize="40dp"
-            android:text="+"
+            android:text="@string/btn_add"
             android:id="@+id/add"/>
         <Button
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/btn_wh"
+            android:layout_height="@dimen/btn_wh"
             android:textSize="40dp"
-            android:text="-"
+            android:text="@string/btn_sub"
             android:id="@+id/sub"/>
         <Button
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/btn_wh"
+            android:layout_height="@dimen/btn_wh"
             android:textSize="40dp"
-            android:text="*"
+            android:text="@string/btn_mul"
             android:id="@+id/mul"/>
         <Button
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/btn_wh"
+            android:layout_height="@dimen/btn_wh"
             android:textSize="40dp"
-            android:text="/"
+            android:text="@string/btn_div"
             android:id="@+id/div"/>
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="0,0"
-        android:textSize="70dp"
+        android:text="@string/text_answer"
+        android:textSize="@dimen/txt_answer"
         android:gravity="center_horizontal"
         android:id="@+id/answer"/>
 </LinearLayout>
