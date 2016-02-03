@@ -11,6 +11,7 @@
         android:textSize="@dimen/txt_answer"
         android:text="@string/text_answer"
         android:gravity="center"
+        android:id="@id/answer"
         />
 
     <LinearLayout
@@ -18,6 +19,58 @@
         android:layout_height="match_parent"
         android:layout_weight="3"
         android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_1"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:id="@+id/number1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_2"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:id="@+id/number2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="50dp"
+                android:paddingBottom="100dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_horizontal"
+                >
+                <Button
+                    android:layout_width="@dimen/btn_wh"
+                    android:layout_height="@dimen/btn_wh"
+                    android:textSize="40dp"
+                    android:text="@string/btn_add"
+                    android:id="@+id/add"/>
+                <Button
+                    android:layout_width="@dimen/btn_wh"
+                    android:layout_height="@dimen/btn_wh"
+                    android:textSize="40dp"
+                    android:text="@string/btn_sub"
+                    android:id="@+id/sub"/>
+                <Button
+                    android:layout_width="@dimen/btn_wh"
+                    android:layout_height="@dimen/btn_wh"
+                    android:textSize="40dp"
+                    android:text="@string/btn_mul"
+                    android:id="@+id/mul"/>
+                <Button
+                    android:layout_width="@dimen/btn_wh"
+                    android:layout_height="@dimen/btn_wh"
+                    android:textSize="40dp"
+                    android:text="@string/btn_div"
+                    android:id="@+id/div"/>
+            </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>
